@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>BusTrackingSystem</display-name>
+  <welcome-file-list>
+    
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>register_bus</servlet-name>
+  	<servlet-class>com.rt.AddBus</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>register_bus</servlet-name>
+  	<url-pattern>/register_bus</url-pattern>
+  
+  </servlet-mapping>
+  
+   
+  <servlet>
+    <servlet-name>updateBus</servlet-name>
+    <servlet-class>com.rt.UpdateBusServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>updateBus</servlet-name>
+    <url-pattern>/update</url-pattern>
+</servlet-mapping>
+
+  
+  <servlet>
+    <servlet-name>viewAllBus</servlet-name>
+    <servlet-class>com.rt.ViewAllBusServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>viewAllBus</servlet-name>
+    <url-pattern>/viewAll</url-pattern>
+</servlet-mapping>
+
+  
+  
+  <servlet>
+    <servlet-name>deleteBus</servlet-name>
+    <servlet-class>com.rt.DeleteBusServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>deleteBus</servlet-name>
+    <url-pattern>/delete</url-pattern>
+</servlet-mapping>
+
+  
+  <servlet>
+  	<servlet-name>registerAdmin</servlet-name>
+  	<servlet-class>com.rt.RegisterAdmin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>registerAdmin</servlet-name>
+  	<url-pattern>/RegisterAdmin</url-pattern>
+  
+  </servlet-mapping>
+</web-app>
+
